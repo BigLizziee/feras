@@ -1,0 +1,292 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #e9f5e1;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+header {
+    background-color: #408726;
+    color: white;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+header .logo h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #c4e000;
+}
+
+.hero {
+    background-color: mintcream;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 120px 10px; 
+    min-height: 400px;  
+}
+
+.hero h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem; 
+    margin-bottom: 1px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #333;
+}
+
+.hero p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem; 
+    margin-bottom: 20px;
+    font-weight: 300;
+    color: #555;
+    line-height: 1.6;
+}
+
+.story {
+    padding: 60px 10%;
+    background-color: #fff;
+}
+
+.story h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.story-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.story-image img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.story-text p {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 600px;
+}
+
+.gallery {
+    padding: 60px 10%;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.gallery h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.image-carousel {
+    width: 100%;
+}
+
+.image-carousel div {
+    display: flex;
+    justify-content: center;
+}
+
+.image-carousel img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #408726;
+    color: white;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 15px 5%;
+    }
+
+    header .logo h1 {
+        font-size: 1.5rem;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    header nav ul li a {
+        font-size: 1rem;
+    }
+
+    .hero {
+        padding: 80px 10px;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+    }
+
+    .story {
+        padding: 40px 5%;
+    }
+
+    .story h2 {
+        font-size: 2rem;
+    }
+
+    .story-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .story-image img {
+        width: 100%;
+    }
+
+    .story-text p {
+        font-size: 1rem;
+        color: #555;
+    }
+
+    .gallery {
+        padding: 40px 5%;
+    }
+
+    .gallery h2 {
+        font-size: 2rem;
+    }
+
+    .lightbox-img {
+        max-width: 80%;
+    }
+
+    footer {
+        padding: 15px;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 10px 5%;
+    }
+
+    header .logo h1 {
+        font-size: 1.2rem;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    header nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    .hero {
+        padding: 60px 10px;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .story {
+        padding: 30px 5%;
+    }
+
+    .story h2 {
+        font-size: 1.8rem;
+    }
+
+    .story-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .story-image img {
+        width: 100%;
+    }
+
+    .story-text p {
+        font-size: 0.9rem;
+    }
+
+    .gallery {
+        padding: 30px 5%;
+    }
+
+    .gallery h2 {
+        font-size: 1.8rem;
+    }
+
+    .image-carousel {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+
